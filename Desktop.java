@@ -1,17 +1,8 @@
-class Desktop{
-  String manufacturer;
-  String os;
-  int ram;
-  int storage;
-  String chipType;
+class Desktop extends Computer{
   int monitors;
   boolean wired;
   public Desktop(String manufacturer, String os, int ram, int storage, String chipType, int monitors, boolean wired){
-    this.manufacturer = manufacturer;
-    this.os = os;
-    this.ram = ram;
-    this.storage = storage;
-    this.chipType = chipType;
+    super(manufacturer, os, ram, storage, chipType);
     this.monitors = monitors;
     this.wired = wired;
   }
