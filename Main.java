@@ -6,6 +6,11 @@ public class Main {
     public Main(){
         Laptop l1 = new Laptop("Macintosh", "MacOS", 8, 256, "Silicon", 2.5, false);
         Desktop d1 = new Desktop("Dell", "Windows", 16, 1024, "Intel", 2, true);    
+        addToDatabase(d1);
+        addToDatabase(l1);
+    }
+    public void addToDatabase(Computer c){
+        System.out.println("Added the " + c.manufacturer + " to database");
     }
 }
 
